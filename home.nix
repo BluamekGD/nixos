@@ -3,13 +3,14 @@
   home.homeDirectory = "/home/bartek";
 
   home.packages = with pkgs; [
-    foot
+    kitty
     fuzzel
     waybar
     swaylock
     wl-clipboard
     brightnessctl
     playerctl
+    fastfetch
   ];
 
   home.stateVersion = "24.11";
