@@ -1,9 +1,9 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, mangowm, ... }: {
   home.username = "bartek";
   home.homeDirectory = "/home/bartek";
 
   home.packages = with pkgs; [
-    mangowm
+    mangowm.packages.x86_64-linux.default
     foot
     fuzzel
     waybar
@@ -14,7 +14,7 @@
   ];
 
   xdg.configFile."mango/config.toml".text = ''
-    # mangowm config — customize later
+    # mangowm.packages.x86_64-linux.default config — customize later
   '';
 
   home.stateVersion = "24.11";
