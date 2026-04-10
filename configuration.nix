@@ -60,6 +60,9 @@
     };
   };
 
+  # SSH
+  services.openssh.enable = true;
+
   # Wayland env vars
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
