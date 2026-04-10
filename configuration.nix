@@ -46,6 +46,9 @@
     pulse.enable = true;
   };
 
+  # Mango WM
+  programs.mango.enable = true;
+
   # Display manager
   services.greetd = {
     enable = true;
