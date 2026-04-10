@@ -7,22 +7,24 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    mango = {
-      url = "github:mangowm/mango";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, mango, ... }: {
+  outputs = { self, nixpkgs, home-manager, hyprland, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+      specialArgs = { inherit hyprland; };
       modules = [
         ./configuration.nix
-        mango.nixosModules.mango
+        hyprland.nixosModules.default
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit hyprland; };
           home-manager.users.bartek = import ./home.nix;
         }
       ];

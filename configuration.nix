@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, hyprland, ... }: {
   imports = [ ./hardware-configuration.nix ];
 
   # Bootloader
@@ -46,22 +46,23 @@
     pulse.enable = true;
   };
 
-  # Mango WM
-  programs.mango.enable = true;
+  # Hyprland
+  programs.hyprland = {
+    enable = true;
+    package = hyprland.packages.x86_64-linux.hyprland;
+    portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
+  };
 
   # Display manager
   services.greetd = {
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --cmd mango";
+        command = "${pkgs.tuigreet}/bin/tuigreet --cmd Hyprland";
         user = "greeter";
       };
     };
   };
-
-  # SSH
-  services.openssh.enable = true;
 
   # Wayland env vars
   environment.sessionVariables = {
@@ -75,6 +76,9 @@
 
   # Touchpad
   services.libinput.enable = true;
+
+  # SSH
+  services.openssh.enable = true;
 
   system.stateVersion = "24.11";
 }
