@@ -17,6 +17,7 @@
     pywal16
     swaylock
     fuzzel
+    fastfetch
   ];
 
   # Symlink wal palette

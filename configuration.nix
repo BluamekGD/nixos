@@ -23,17 +23,19 @@
   time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # User
+  # User and shell
   users.users.bartek = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
-    shell = pkgs.bash;
+    shell = pkgs.zsh;
     initialPassword = "changeme";
   };
 
+  programs.zsh.enable = true;
+
   # System packages
   environment.systemPackages = with pkgs; [
-    git wget curl
+    git wget curl nvim
     pciutils usbutils
   ];
 
