@@ -72,5 +72,8 @@
   # SSH
   services.openssh.enable = true;
 
+  # Samba client
+  services.gvfs.enable = true;
+
   system.stateVersion = "24.11";
 }

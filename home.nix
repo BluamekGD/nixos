@@ -5,6 +5,8 @@
   home.packages = with pkgs; [
     kitty
     kdePackages.dolphin
+    kdePackages.kio-extras
+    samba
     hyprlauncher
     waybar
     hyprpaper
