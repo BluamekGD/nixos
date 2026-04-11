@@ -25,6 +25,15 @@
     recursive = true;
   };
 
+  # Waybar (pls send help)
+  xdg.configFile."waybar/config.jsonc".source = ./resources/waybar/config.jsonc;
+  xdg.configFile."waybar/modules.jsonc".source = ./resources/waybar/modules.jsonc;
+  xdg.configFile."waybar/style.css".source = ./resources/waybar/style.css;
+  xdg.configFile."waybar/css/colors.css".source = ./resources/waybar/css/colors.css;
+  xdg.configFile."waybar/css/style.css".source = ./resources/waybar/css/style.css;
+  xdg.configFile."waybar/layouts/with_music.jsonc".source = ./resources/waybar/layouts/with_music.jsonc;
+  xdg.configFile."waybar/layouts/with_window.jsonc".source = ./resources/waybar/layouts/with_window.jsonc;
+
   wayland.windowManager.hyprland = {
     enable = true;
     package = null;
