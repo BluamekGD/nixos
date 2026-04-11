@@ -29,7 +29,7 @@
     "group/gright2" : {
         "orientation": "horizontal",
         "modules" : [
-            "wireplumber", "bluetooth",  "network"
+            "wireplumber",  "network"
         ]
     },
 
