@@ -22,7 +22,7 @@
     "group/gright1" : {
         "orientation": "horizontal",
         "modules" : [
-            "memory", "temperature", "tray"
+            "memory", "tray"
         ]
     },
 
