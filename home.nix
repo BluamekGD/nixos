@@ -218,6 +218,14 @@
       ];
     };
   };
+  
+  # Hyprpaper config
+  xdg.configFile."hypr/hyprpaper.jpg".source = ./resources/hyprpaper.jpg;
+
+  xdg.configFile."hypr/hyprpaper.conf".text = "
+    preload = ~/.config/hypr/hyprpaper.jpg
+    wallpaper = ~/.config/hypr/hyprpaper.jpg
+    splash = false";
 
   home.stateVersion = "24.11";
 }
