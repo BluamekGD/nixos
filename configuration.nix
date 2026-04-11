@@ -38,7 +38,12 @@
   ];
 
   # Fonts
-  fonts.packages = with pkgs; [ pkgs.nerd-fonts ];
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    nerd-fonts.hack
+    nerd-fonts.noto
+  ];
 
   # Audio
   security.rtkit.enable = true;
