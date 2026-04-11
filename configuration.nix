@@ -23,11 +23,9 @@
   time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # SDDM Keyboard fix
-  services.xkb = {
-    layout = "us";
-    variant = "";
-  };
+  # Keyboard layout fix
+  console.keyMap = "us";
+  services.xserver.xkb.layout = "us";
 
   # User
   users.users.bartek = {
