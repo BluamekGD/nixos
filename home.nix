@@ -14,6 +14,7 @@
     brightnessctl
     playerctl
     wl-clipboard
+    pywal16
     swaylock
     fuzzel
   ];
