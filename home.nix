@@ -19,6 +19,12 @@
     fuzzel
   ];
 
+  # Symlink wal palette
+  home.file.".cache/wal" = {
+    source = ./resources/wal;
+    recursive = true;
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     package = null;

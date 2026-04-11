@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/bartek/hyprpaper.jpg"
+let background = "#0a1919"
+let foreground = "#c1c5c5"
+let cursor     = "#c1c5c5"
+
+" Colors
+let color0  = "#0a1919"
+let color1  = "#1671C9"
+let color2  = "#5E97B6"
+let color3  = "#3388CE"
+let color4  = "#599ED1"
+let color5  = "#8EA4B8"
+let color6  = "#98B5CF"
+let color7  = "#c1c5c5"
+let color8  = "#596e6e"
+let color9  = "#1671C9"
+let color10 = "#5E97B6"
+let color11 = "#3388CE"
+let color12 = "#599ED1"
+let color13 = "#8EA4B8"
+let color14 = "#98B5CF"
+let color15 = "#c1c5c5"

@@ -1,0 +1,29 @@
+{
+    "checksum": "162e0217c6127a441f7cf453b0b6948c",
+    "wallpaper": "/home/bartek/hyprpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a1919",
+        "foreground": "#c1c5c5",
+        "cursor": "#c1c5c5"
+    },
+    "colors": {
+        "color0": "#0a1919",
+        "color1": "#1671C9",
+        "color2": "#5E97B6",
+        "color3": "#3388CE",
+        "color4": "#599ED1",
+        "color5": "#8EA4B8",
+        "color6": "#98B5CF",
+        "color7": "#c1c5c5",
+        "color8": "#596e6e",
+        "color9": "#1671C9",
+        "color10": "#5E97B6",
+        "color11": "#3388CE",
+        "color12": "#599ED1",
+        "color13": "#8EA4B8",
+        "color14": "#98B5CF",
+        "color15": "#c1c5c5"
+    }
+}

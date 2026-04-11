@@ -1,0 +1,21 @@
+set $wallpaper /home/bartek/hyprpaper.jpg
+
+set $background #0a1919
+set $foreground #c1c5c5
+
+set $color0 #0a1919
+set $color1 #1671C9
+set $color2 #5E97B6
+set $color3 #3388CE
+set $color4 #599ED1
+set $color5 #8EA4B8
+set $color6 #98B5CF
+set $color7 #c1c5c5
+set $color8 #596e6e
+set $color9 #1671C9
+set $color10 #5E97B6
+set $color11 #3388CE
+set $color12 #599ED1
+set $color13 #8EA4B8
+set $color14 #98B5CF
+set $color15 #c1c5c5
