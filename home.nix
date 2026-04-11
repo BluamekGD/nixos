@@ -226,7 +226,8 @@
     wallpaper {
       monitor = eDP-1
       path = ~/.config/hypr/hyprpaper.jpg
-    }";
+    }
+    splash = false";
 
   home.stateVersion = "24.11";
 }
