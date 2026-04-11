@@ -223,10 +223,10 @@
   xdg.configFile."hypr/hyprpaper.jpg".source = ./resources/hyprpaper.jpg;
 
   xdg.configFile."hypr/hyprpaper.conf".text = "
-    monitor = eDP-1
-    preload = ~/.config/hypr/hyprpaper.jpg
-    wallpaper = ~/.config/hypr/hyprpaper.jpg
-    splash = false";
+    wallpaper {
+      monitor = eDP-1
+      path = ~/.config/hypr/hyprpaper.jpg
+    }";
 
   home.stateVersion = "24.11";
 }
