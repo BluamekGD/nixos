@@ -4,7 +4,7 @@
 
   home.packages = with pkgs; [
     kitty
-    dolphin
+    kdePackages.dolphin
     hyprlauncher
     waybar
     hyprpaper
