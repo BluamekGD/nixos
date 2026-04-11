@@ -53,8 +53,7 @@
     portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
   };
 
-  # ly DM
-  enviroment.systemPackages = with pkgs; [
+  # Ly DM
   systemd.services.ly = {
     enable = true;
     description = "ly Display Manager";
