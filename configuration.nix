@@ -33,7 +33,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    git wget curl ly
+    git wget curl
     pciutils usbutils
   ];
 
@@ -53,27 +53,8 @@
     portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
   };
 
-  # Xserver (needed for session files)
-  services.xserver.enable = true;
-
   # Ly DM
-  systemd.services.ly = {
-    enable = true;
-    description = "ly Display Manager";
-    after = [ "systemd-user-sessions.service" ];
-    wantedBy = [ "multi-user.target" ];
-    conflicts = [ "getty@tty1.service" ];
-    serviceConfig = {
-      ExecStart = "${pkgs.ly}/bin/ly";
-      StandardInput = "tty";
-      TTYPath = "/dev/tty1";
-      TTYReset = true;
-      TTYVHangup = true;
-    };
-  };
-
-  # PAM for ly
-  security.pam.services.ly.enable = true;
+  services.displayManager.ly.enable = true;
 
   # Wayland env vars
   environment.sessionVariables = {
