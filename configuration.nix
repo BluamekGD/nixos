@@ -35,7 +35,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    git wget curl nvim
+    git wget curl neovim
     pciutils usbutils
   ];
 
