@@ -20,6 +20,24 @@
     fastfetch
   ];
 
+  # .zshrc
+  home.file.".zshrc".text = "
+    # Lines configured by zsh-newuser-install
+    HISTFILE=~/.histfile
+    HISTSIZE=1000
+    SAVEHIST=1000
+    setopt autocd extendedglob
+    bindkey -e
+    # End of lines configured by zsh-newuser-install
+    # The following lines were added by compinstall
+    zstyle :compinstall filename '/home/bartek/.zshrc'
+
+    autoload -Uz compinit
+    compinit
+    # End of lines added by compinstall
+    alias nixfetch='fastfetch --kitty-direct /etc/nixos/resources/logo.png'
+    nixfetch";
+
   # Symlink wal palette
   home.file.".cache/wal" = {
     source = ./resources/wal;
