@@ -20,7 +20,7 @@
     fastfetch
     cava
     cmatrix
-    pkgs.steam
+    firefox
   ];
 
   # .zshrc

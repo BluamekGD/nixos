@@ -39,9 +39,6 @@
     pciutils usbutils
   ];
 
-  # Allow unfree packages (like steam)
-  nixpkgs.config.allowUnfree = true;
-
   # Fonts
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
