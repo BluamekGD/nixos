@@ -10,7 +10,6 @@
 
   # Intel iGPU
   hardware.graphics.enable = true;
-  hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
   hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
