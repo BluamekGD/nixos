@@ -39,14 +39,10 @@
     pciutils usbutils
   ];
 
-  # Steam (very important!!!!!!!!!!!!!)
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "steam"
-    "steam-original"
-    "steam-unwrapped"
-    "steam-run"
-  ];
-  
+  # Allow unfree packages (needed for steam)
+  nixpkgs.config.allowUnfree = true;
+
+  # Steam
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
