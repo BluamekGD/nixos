@@ -39,8 +39,12 @@
     pciutils usbutils
   ];
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  # Enable GAMING with Steam (goat of game distribution)
+  programs.steam.enable = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = false;
+  };
 
   # Fonts
   fonts.packages = with pkgs; [
