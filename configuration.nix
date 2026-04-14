@@ -39,6 +39,9 @@
     pciutils usbutils
   ];
 
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   # Fonts
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono

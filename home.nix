@@ -21,6 +21,7 @@
     cava
     cmatrix
     firefox
+    steam
   ];
 
   # .zshrc
