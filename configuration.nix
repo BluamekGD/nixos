@@ -10,6 +10,7 @@
 
   # Intel iGPU
   hardware.graphics.enable = true;
+  hardware.graphics.driSupport32Bit = true;
   hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
     intel-compute-runtime
