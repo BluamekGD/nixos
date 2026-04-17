@@ -10,7 +10,6 @@
 
   # Intel iGPU
   hardware.graphics.enable = true;
-  hardware.graphics.enable32Bit = true;
   hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
     intel-compute-runtime
@@ -39,17 +38,6 @@
     git wget curl neovim
     pciutils usbutils
   ];
-
-  # Allow unfree packages (needed for steam)
-  nixpkgs.config.allowUnfree = true;
-
-  # Steam
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    localNetworkGameTransfers.openFirewall = true;
-  };
 
   # Fonts
   fonts.packages = with pkgs; [
