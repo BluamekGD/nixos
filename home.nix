@@ -7,7 +7,7 @@
     kdePackages.dolphin
     kdePackages.kio-extras
     samba
-    hyprlauncher
+    wofi
     waybar
     hyprpaper
     hyprlock
