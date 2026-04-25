@@ -68,7 +68,7 @@
 
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
-      "$menu" = "hyprlauncher";
+      "$menu" = "wofi --show drun";
       "$mainMod" = "SUPER";
 
       exec-once = [
