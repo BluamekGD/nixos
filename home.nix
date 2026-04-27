@@ -22,6 +22,7 @@
     cmatrix
     firefox
     cargo
+    jellyfin-desktop
   ];
 
   # .zshrc
