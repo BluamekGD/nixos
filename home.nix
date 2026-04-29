@@ -23,6 +23,7 @@
     firefox
     cargo
     jellyfin-desktop
+    bat
   ];
 
   # Cursors
@@ -85,7 +86,7 @@
       ];
 
       env = [
-        "XCURSOR_SIZE,24"
+        "XCURSOR_SIZE,36"
 	"XCURSOR_THEME,BreezeX-Black"
       ];
 
@@ -93,7 +94,7 @@
         gaps_in = 5;
         gaps_out = 20;
         border_size = 2;
-        "col.active_border" = "rgba(1671c9ee) rgba(5e97b6ee) 45deg";
+        "col.active_border" = "rgba(b8cb76ee) rgba(93ad70ee) 45deg";
         "col.inactive_border" = "rgba(595959aa)";
         resize_on_border = false;
         allow_tearing = false;
