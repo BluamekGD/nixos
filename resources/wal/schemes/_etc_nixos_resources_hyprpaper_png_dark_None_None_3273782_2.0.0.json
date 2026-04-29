@@ -2,7 +2,6 @@
     "checksum": "194e15abad73983b69c55c9ffcf5e904",
     "wallpaper": "/etc/nixos/resources/hyprpaper.png",
     "alpha": "100",
-
     "special": {
         "background": "#0a1019",
         "foreground": "#c1c3c5",

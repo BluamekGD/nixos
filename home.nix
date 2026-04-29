@@ -45,12 +45,12 @@
     nixfetch";
 
   # Symlink wal palette
-  # home.file.".cache/wal" = {
-  #   source = ./resources/wal;
-  #   recursive = true;
-  # };
+  home.file.".cache/wal" = {
+    source = ./resources/wal;
+    recursive = true;
+  };
 
-  # Waybar (pls send help)
+  # Waybar
   xdg.configFile."waybar/config.jsonc".source = ./resources/waybar/config.jsonc;
   xdg.configFile."waybar/modules.jsonc".source = ./resources/waybar/modules.jsonc;
   xdg.configFile."waybar/style.css".source = ./resources/waybar/style.css;
