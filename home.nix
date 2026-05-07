@@ -25,6 +25,7 @@
     jellyfin-desktop
     bat
     pix
+    makemkv
   ];
 
   # Cursors
