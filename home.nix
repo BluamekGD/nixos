@@ -24,7 +24,7 @@
     cargo
     jellyfin-desktop
     bat
-    retroarch
+    makemkv
   ];
 
   # Cursors
