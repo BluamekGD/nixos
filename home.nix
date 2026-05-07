@@ -24,7 +24,6 @@
     cargo
     jellyfin-desktop
     bat
-    makemkv
     pix
   ];
 
