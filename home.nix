@@ -27,6 +27,8 @@
     pix
     makemkv
     handbrake
+    OVMF
+    qemu
   ];
 
   # Cursors
