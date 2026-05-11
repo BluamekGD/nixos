@@ -11,7 +11,7 @@
   outputs = { self, nixpkgs, home-manager, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = { inherit hyprland; };
+      specialArgs = { inherit; };
       modules = [
         ./configuration.nix
         hyprland.nixosModules.default
