@@ -33,7 +33,7 @@
       modifier = "Mod4";
       terminal = "kitty";
       startup = [
-        {command = "waybar; swaybg -o * -i /etc/nixos/resources/swaybg.png -m fill";}
+        {command = "waybar; swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m fill";}
       ];
     };
   };
