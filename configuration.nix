@@ -39,27 +39,8 @@
     initialPassword = "changeme";
   };
 
-  # zsh (peak shell)
-  programs.zsh = {
-    enable = true;
-
-    # I'd rather die + obligatory flex
-    initContent = "zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'; nixfetch";
-
-    # Aliases
-    shellAliases = {
-      nixfetch = "fastfetch --kitty-direct /etc/nixos/resources/logo.png";
-      nixos-update = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
-    };
-
-    # History
-    history = {
-      size = 1000;
-      save = 1000;
-      ignoreDups = true;
-      share = true;
-    };
-  };
+  # zsh
+  programs.zsh.enable = true;
 
   # System packages
   nixpkgs.config.allowUnfree = true;
