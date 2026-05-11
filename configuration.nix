@@ -71,6 +71,7 @@
   # Hyprland
   programs.hyprland = {
     enable = true;
+    xwayland.enable = true;
     package = hyprland.packages.x86_64-linux.hyprland;
     portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
   };
