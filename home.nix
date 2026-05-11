@@ -34,9 +34,8 @@
 
   # fih
   programs.fish = {
-
     shellAliases = {
-      nixfetch = "fastfetch --kitty-direct /etc/nixos/resources/logo.png"
+      nixfetch = "fastfetch --kitty-direct /etc/nixos/resources/logo.png";
       };
 
     shellInit = "set -g fish_complete_case_insensitive 1; nixfetch";
