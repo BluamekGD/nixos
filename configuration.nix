@@ -40,7 +40,7 @@
   };
 
   # zsh (peak shell)
-  programs.zsh {
+  programs.zsh = {
     enable = true;
 
     # I'd rather die + obligatory flex
