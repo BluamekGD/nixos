@@ -48,8 +48,8 @@
 
     # Aliases
     shellAliases = {
-      nixfetch = "fastfetch --kitty-direct /etc/nixos/resources/logo.png"
-      nixos-update = "sudo nixos-rebuild switch --flake /etc/nixos#nixos"
+      nixfetch = "fastfetch --kitty-direct /etc/nixos/resources/logo.png";
+      nixos-update = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
     };
 
     # History
