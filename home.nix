@@ -44,6 +44,20 @@
   programs.starship = {
     enable = true;
     enableFishIntegration = true;
+    settings = {
+      format = "$directory\n$character";
+
+      directory = {
+        style = "bold cyan";
+        truncation_length = 4;
+        truncate_to_repo = false;
+      };
+
+      character = {
+        success_symbol = "[❯](bold green)";
+        error_symbol = "[❯](bold red)";
+      };
+    };
   };
 
   # Cursors
