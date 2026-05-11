@@ -14,7 +14,6 @@
       specialArgs = { inherit; };
       modules = [
         ./configuration.nix
-        hyprland.nixosModules.default
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
