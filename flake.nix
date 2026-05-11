@@ -18,7 +18,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit hyprland; };
+          home-manager.extraSpecialArgs = { inherit; };
           home-manager.users.bartek = import ./home.nix;
         }
       ];
