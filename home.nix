@@ -25,6 +25,12 @@
     recursive = true;
   };
 
+  # kitty
+  home.file.".config/kitty" = {
+    source = ./resources/kitty;
+    recursive = true;
+  };
+
   # SwayWM
   wayland.windowManager.sway = {
     enable = true;
