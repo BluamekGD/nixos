@@ -36,6 +36,7 @@
         {command = "waybar";}
 	{command = "swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m fill";}
       ];
+      bars = [];
     };
   };
 
