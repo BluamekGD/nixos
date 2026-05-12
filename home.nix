@@ -48,7 +48,8 @@
     config = rec {
       seat = {
         "seat0" = {
-          xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
+          xcursor_theme = "${config.home.pointerCursor.name}";
+	  xcursor_size = "${toString config.home.pointerCursor.size}";
 	};
       };
       modifier = "Mod4";
