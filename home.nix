@@ -47,7 +47,7 @@
     xwayland = true;
     config = rec {
       seat = {
-        "seat0" = {
+        "*" = {
           xcursor_theme = "\"${config.home.pointerCursor.name}\" ${toString config.home.pointerCursor.size}";
 	};
       };
