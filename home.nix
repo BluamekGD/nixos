@@ -20,9 +20,12 @@
   ];
 
   # Cursors
-  home.file.".local/share/icons" = {
-    source = ./resources/icons;
-    recursive = true;
+  home.pointerCursor = {
+    name = "WhiteSur Cursors";
+    package = "pkgs.whitesur-cursors";
+    size = 24;
+    gtk.enable = true;
+    x11.enable = true;
   };
 
   # Terminal
