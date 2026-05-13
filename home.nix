@@ -13,6 +13,15 @@
     localsend
   ];
 
+  # omg why wont you work
+  home.pointerCursor = {
+    name = "Bibata-Modern-Classic";
+    package = "pkgs.bibata-cursors";
+    size = 24;
+    gtk.enable = true;
+    x11.enable = true;
+  };
+
   # Terminal
   home.file.".config/kitty" = {
     source = ./resources/kitty;
@@ -30,6 +39,11 @@
   wayland.windowManager.sway = {
     enable = true;
     xwayland = true;
+    seat = {
+      "*" = {
+        xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
+      };
+    };
     config = rec {
       modifier = "Mod4";
       terminal = "kitty --title kitty";
