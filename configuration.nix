@@ -80,7 +80,7 @@
       swaylock
       swayidle
       swaybg
-      waybar
+      polybar
       wofi
       wl-clipboard
       grim

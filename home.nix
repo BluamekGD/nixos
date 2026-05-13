@@ -5,28 +5,13 @@
   home.packages = with pkgs; [
     kitty
     samba
-    fastfetch
-    cava
-    cbonsai
-    cmatrix
     firefox
     jellyfin-desktop
     bat
     makemkv
     handbrake
-    OVMF
-    qemu
     localsend
   ];
-
-  # Cursors
-  home.pointerCursor = {
-    name = "WhiteSur Cursors";
-    package = pkgs.whitesur-cursors;
-    size = 24;
-    gtk.enable = true;
-    x11.enable = true;
-  };
 
   # Terminal
   home.file.".config/kitty" = {
@@ -46,11 +31,6 @@
     enable = true;
     xwayland = true;
     config = rec {
-      seat = {
-        "*" = {
-          xcursor_theme = "\"${config.home.pointerCursor.name}\" ${toString config.home.pointerCursor.size}";
-	};
-      };
       modifier = "Mod4";
       terminal = "kitty --title kitty";
       menu = "wofi --show drun";
