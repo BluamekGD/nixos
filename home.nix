@@ -35,6 +35,11 @@
     source = ./resources/.zshrc;
   };
 
+  # Fuzzel
+  home.file.".config/fuzzel/fuzzel.ini" = {
+    source = ./resources/fuzzel.ini
+  };
+
   # SwayWM
   wayland.windowManager.sway = {
     enable = true;
