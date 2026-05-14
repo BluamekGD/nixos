@@ -37,7 +37,7 @@
 
   # Fuzzel
   home.file.".config/fuzzel/fuzzel.ini" = {
-    source = ./resources/fuzzel.ini
+    source = ./resources/fuzzel.ini;
   };
 
   # SwayWM
