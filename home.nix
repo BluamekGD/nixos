@@ -62,9 +62,11 @@
       colors = {
         focused = {
           border = "#ebdbb2";
+	  background = "#ebdbb2";
 	};
 	unfocused = {
           border = "#282828";
+	  background = "#282828";
 	};
       };
       seat = {
