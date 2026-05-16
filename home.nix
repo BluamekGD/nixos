@@ -68,11 +68,11 @@
 	  childBorder = "#ebdbb2";
 	};
 	unfocused = {
-          border = "#282828";
-	  background = "#282828";
+          border = "#1d2021";
+	  background = "#1d2021";
 	  text = "#1e1e2e";
-	  indicator = "#282828";
-	  childBorder = "#282828";
+	  indicator = "#1d2021";
+	  childBorder = "#1d2021";
 	};
       };
 
