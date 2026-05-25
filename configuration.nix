@@ -1,6 +1,10 @@
-{ config, pkgs, hyprland, ... }: {
-  imports = [ ./hardware-configuration.nix ];
-  
+{
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [./hardware-configuration.nix];
+
   # Bootloader
   boot.loader.grub.enable = true;
   boot.loader.grub.efiSupport = true;
@@ -14,27 +18,27 @@
   ";
 
   # MakeMKV fix
-  boot.kernelModules = [ "sg" ];
-  
+  boot.kernelModules = ["sg"];
+
   # Intel iGPU
   hardware.graphics.enable = true;
   hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
     intel-compute-runtime
   ];
-  
+
   # Networking
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
-  
+
   # Locale / time
   time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "en_US.UTF-8";
-  
+
   # User and shell
   users.users.bartek = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
+    extraGroups = ["wheel" "networkmanager" "video" "audio"];
     shell = pkgs.zsh;
     initialPassword = "changeme";
   };
@@ -49,10 +53,16 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    git wget curl
-    neovim alejandra nil
-    pciutils usbutils
-    brightnessctl playerctl
+    git
+    wget
+    curl
+    neovim
+    alejandra
+    nil
+    pciutils
+    usbutils
+    brightnessctl
+    playerctl
     libxcursor
   ];
 
@@ -63,7 +73,7 @@
     nerd-fonts.hack
     nerd-fonts.noto
   ];
-  
+
   # Audio
   security.rtkit.enable = true;
   services.pipewire = {
@@ -72,7 +82,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  
+
   # SwayWM
   programs.sway = {
     enable = true;
@@ -163,26 +173,26 @@
       session_log = ".local/state/ly-session.log";
     };
   };
-  
+
   # Wayland env vars
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
   };
-  
+
   # Laptop power management
   services.tlp.enable = true;
   powerManagement.cpuFreqGovernor = "powersave";
-  
+
   # Touchpad
   services.libinput.enable = true;
-  
+
   # SSH
   services.openssh.enable = true;
-  
+
   # Samba client
   services.gvfs.enable = true;
-  
+
   # I did read the comment
   system.stateVersion = "24.11";
 }
