@@ -27,6 +27,12 @@
     x11.enable = true;
   };
 
+  # Waybar
+  home.file.".config/waybar" = {
+    source = ./resources/waybar;
+    recursive = true;
+  };
+
   # Terminal
   home.file.".config/kitty" = {
     source = ./resources/kitty;
