@@ -46,12 +46,12 @@
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
-
-    # Libadwaita hell
-    home.xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/assets";
-    home.xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk.css";
-    home.xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk-dark.css";
   };
+
+  # Libadwaita hell
+  home.xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/assets";
+  home.xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk.css";
+  home.xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk-dark.css";
 
   # Cursor
   home.pointerCursor = {
