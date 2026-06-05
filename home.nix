@@ -39,8 +39,11 @@
       package = pkgs.gruvbox-plus-icons;
     };
 
-    # Fallback
-    extraConfig = {
+    # Fallback :))))))))))
+    gtk2.extraConfig = "
+      gtk-application-prefer-dark-theme = 1
+    ";
+    gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
 
