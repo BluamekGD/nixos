@@ -49,9 +49,9 @@
   };
 
   # Libadwaita hell
-  home.xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/assets";
-  home.xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk.css";
-  home.xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk-dark.css";
+  xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/assets";
+  xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk.css";
+  xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk-dark.css";
 
   # Cursor
   home.pointerCursor = {
