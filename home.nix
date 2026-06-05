@@ -9,14 +9,46 @@
   home.packages = with pkgs; [
     kitty
     samba
+    nautilus
     firefox
     jellyfin-desktop
     bat
     makemkv
     handbrake
     localsend
-    steam
   ];
+
+  # GTK Prefer Dark
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
+
+  # Main config for GTK2/3/4 assets
+  gtk = {
+    enable = true;
+
+    theme = {
+      name = "Gruvbox-Dark-B";
+      package = pkgs.gruvbox-gtk-theme;
+    };
+
+    iconTheme = {
+      name = "Gruvbox-Plus-Dark";
+      package = pkgs.gruvbox-plus-icons;
+    };
+
+    # Fallback
+    extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
+
+    # Libadwaita hell
+    home.xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/assets";
+    home.xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk.css";
+    home.xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk-dark.css";
+  };
 
   # Cursor
   home.pointerCursor = {
