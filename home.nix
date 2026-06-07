@@ -16,6 +16,7 @@
     makemkv
     handbrake
     localsend
+    vlc
   ];
 
   # GTK Prefer Dark
