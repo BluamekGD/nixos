@@ -1,4 +1,4 @@
-# ❄️ NixOS (7 stages of insanity)
+# ❄️ NixOS (8 stages of insanity)
 
 1. This is so cool
 2. It's so easy like boom I did it
@@ -8,4 +8,4 @@
 6. Infecting others with NixOS
 7. Cycle repeats
 
-# IT COMES WITH STEAM!!!
+# 8. IT COMES WITH STEAM!!!
