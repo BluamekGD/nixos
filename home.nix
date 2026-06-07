@@ -17,6 +17,7 @@
     handbrake
     localsend
     vlc
+    steam
   ];
 
   # GTK Prefer Dark
