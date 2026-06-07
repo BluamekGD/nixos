@@ -1,4 +1,4 @@
-# ❄️ NixOS (5 stages of insanity)
+# ❄️ NixOS (7 stages of insanity)
 
 1. This is so cool
 2. It's so easy like boom I did it
